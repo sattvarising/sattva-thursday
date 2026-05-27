@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 2026 Method to Overcome Stress & Anxiety | Sattva Rising</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --sage:       #6E8060;
+  --sage-light: #EDF0E9;
+  --sage-mid:   #B8C4B0;
+  --cream:      #FAF8F4;
+  --linen:      #F3EDE5;
+  --linen-deep: #EAE1D5;
+  --earth:      #2C2A25;
+  --earth-mid:  #58564F;
+  --earth-soft: #8A887F;
+  --gold:       #B89060;
+  --gold-light: #F7EDD8;
+  --rose:       #C4957E;
+  --rose-light: #F7EDE8;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Jost', sans-serif;
+  background: var(--cream);
+  color: var(--earth);
+  font-weight: 300;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  background: rgba(250,248,244,0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--sage-mid);
+  padding: 1.1rem 3rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem; font-weight: 400;
+  letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--earth); text-decoration: none;
+}
+.nav-cta {
+  font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--sage); text-decoration: none; font-weight: 500;
+  border-bottom: 1px solid var(--sage-mid);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
+}
+.nav-cta:hover { color: var(--earth); border-color: var(--earth); }
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 52% 48%;
+  padding-top: 64px;
+}
+.hero-left {
+  background: var(--linen);
+  padding: 5rem 4rem 5rem 6rem;
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative;
+}
+.hero-left::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--sage) 0%, var(--gold) 50%, transparent 100%);
+}
+.eyebrow {
+  font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;
+}
+.eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--sage); display: inline-block; }
+
+/* VIDEO HERO PANEL */
+.hero-right {
+  background: var(--earth);
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+}
+.video-panel {
+  flex: 1;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 3.5rem 3rem;
+  gap: 2rem;
+}
+.video-wrapper {
+  width: 100%;
+  position: relative;
+}
+.video-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(196,206,188,0.2);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 1.25rem;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.video-placeholder:hover {
+  border-color: rgba(196,206,188,0.45);
+  background: rgba(255,255,255,0.07);
+}
+.video-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(110,128,96,0.08) 0%, transparent 70%);
+}
+.play-btn {
+  width: 64px; height: 64px;
+  border-radius: 50%;
+  border: 1px solid rgba(196,206,188,0.4);
+  display: flex; align-items: center; justify-content: center;
+  transition: border-color 0.2s, transform 0.2s;
+  position: relative; z-index: 1;
+}
+.video-placeholder:hover .play-btn {
+  border-color: var(--sage-mid);
+  transform: scale(1.05);
+}
+.play-icon {
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 18px;
+  border-color: transparent transparent transparent rgba(196,206,188,0.8);
+  margin-left: 4px;
+}
+.video-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-style: italic; font-weight: 300;
+  color: rgba(250,248,244,0.6); text-align: center;
+  position: relative; z-index: 1;
+}
+.video-sublabel {
+  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: rgba(196,206,188,0.45); text-align: center;
+  position: relative; z-index: 1;
+}
+.video-caption {
+  text-align: center;
+}
+.video-caption-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-weight: 400;
+  color: rgba(250,248,244,0.75); letter-spacing: 0.05em;
+}
+.video-caption-title {
+  font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--sage-mid); margin-top: 0.2rem;
+}
+.video-note {
+  font-size: 0.72rem; font-style: italic;
+  color: rgba(250,248,244,0.3); text-align: center;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+.hero-h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.8rem, 4vw, 4rem);
+  font-weight: 300; line-height: 1.15;
+  color: var(--earth); margin-bottom: 0.75rem;
+}
+.hero-h1 em { font-style: italic; color: var(--sage); }
+.hero-tagline {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem; font-style: italic; font-weight: 300;
+  color: var(--earth-mid); margin-bottom: 2rem; line-height: 1.5;
+}
+.hero-lead {
+  font-size: 1rem; color: var(--earth-mid); max-width: 480px;
+  line-height: 1.9; margin-bottom: 2.5rem;
+}
+.hero-lead strong { font-weight: 500; color: var(--earth); }
+
+.event-details-inline {
+  display: flex; flex-direction: column; gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--sage-mid);
+  background: rgba(255,255,255,0.5);
+  max-width: 420px;
+}
+.detail-row {
+  display: flex; align-items: center; gap: 0.75rem;
+  font-size: 0.88rem; color: var(--earth-mid);
+}
+.detail-icon { color: var(--sage); font-size: 0.85rem; width: 16px; text-align: center; flex-shrink: 0; }
+.detail-row strong { font-weight: 500; color: var(--earth); }
+
+.btn-primary {
+  display: inline-block;
+  background: var(--earth);
+  color: var(--cream);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase;
+  font-weight: 400; padding: 1.1rem 2.5rem;
+  text-decoration: none; border: none; cursor: pointer;
+  transition: background 0.25s;
+  width: fit-content;
+}
+.btn-primary:hover { background: var(--sage); }
+.btn-sub {
+  display: block; margin-top: 0.75rem;
+  font-size: 0.72rem; color: var(--earth-soft);
+  font-style: italic;
+}
+
+.hero-right {
+  background: var(--earth);
+  display: flex; flex-direction: column;
+  position: relative; overflow: hidden;
+}
+.photo-placeholder {
+  display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
+  color: rgba(255,255,255,0.4);
+}
+.photo-placeholder svg { opacity: 0.5; }
+.photo-label {
+  font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase;
+}
+.real-photo {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.about-photo-main, .pt-photo, .pt-photo-2, .about-photo-secondary, .expect-photo {
+  overflow: hidden;
+}
+
+/* BAND */
+.band {
+  background: var(--earth);
+  padding: 2rem 6rem;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 2rem; flex-wrap: wrap;
+}
+.band-item {
+  display: flex; align-items: center; gap: 1rem;
+}
+.band-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem; font-weight: 300; color: var(--gold);
+}
+.band-text {
+  font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--sage-mid); line-height: 1.4;
+}
+.band-divider { width: 1px; height: 40px; background: rgba(196,206,188,0.2); }
+
+/* TRUST BRIDGE */
+.trust-bridge {
+  background: var(--rose-light);
+  padding: 5rem 6rem;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+}
+.trust-quote-large {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem; font-weight: 300; font-style: italic;
+  color: var(--earth); line-height: 1.4;
+}
+.trust-quote-large em { color: var(--rose); font-style: normal; }
+.trust-quote-attr {
+  margin-top: 1.25rem;
+  font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--earth-soft);
+}
+.trust-copy .section-label { color: var(--rose); }
+.trust-copy p {
+  font-size: 0.97rem; color: var(--earth-mid); line-height: 1.9;
+  margin-bottom: 1rem;
+}
+.trust-copy p strong { font-weight: 500; color: var(--earth); }
+
+/* RESONANCE */
+.resonance { background: var(--linen); padding: 6rem 6rem; }
+.section-label {
+  font-size: 0.68rem; letter-spacing: 0.28em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 1rem;
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.section-label::before { content: ''; width: 20px; height: 1px; background: var(--sage); }
+.section-h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 300;
+  line-height: 1.25; color: var(--earth); margin-bottom: 0.75rem;
+}
+.section-h2 em { font-style: italic; color: var(--sage); }
+.section-intro {
+  font-size: 1rem; color: var(--earth-mid); max-width: 580px;
+  line-height: 1.9; margin-bottom: 3rem;
+}
+
+.resonance-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+}
+.resonance-item {
+  padding: 1.5rem 2rem 1.5rem 0;
+  border-top: 1px solid var(--sage-mid);
+  display: flex; gap: 1rem; align-items: flex-start;
+}
+.resonance-item:nth-child(even) { padding-left: 2rem; border-left: 1px solid var(--sage-mid); }
+.r-arrow { color: var(--sage); flex-shrink: 0; margin-top: 0.25rem; font-size: 0.9rem; }
+.r-text { font-size: 0.95rem; color: var(--earth-mid); line-height: 1.75; }
+.r-text strong { color: var(--earth); font-weight: 500; }
+
+/* PHOTO + TESTIMONIAL STRIP */
+.photo-testimonial {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; height: 480px;
+}
+.pt-photo {
+  background: var(--linen-deep);
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+.pt-photo-2 { background: var(--sage); }
+.pt-quote {
+  background: var(--earth);
+  padding: 3.5rem;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.pt-quote-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem; font-style: italic; font-weight: 300;
+  color: rgba(250,248,244,0.9); line-height: 1.65; margin-bottom: 1.5rem;
+}
+.pt-quote-name {
+  font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--sage-mid);
+}
+
+/* EXPLORE */
+.explore { background: var(--cream); padding: 6rem 6rem; }
+.explore-intro {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 5rem;
+  margin-bottom: 3.5rem; align-items: end;
+}
+.explore-list {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+  background: var(--sage-mid);
+  border: 1px solid var(--sage-mid);
+}
+.explore-item {
+  background: var(--cream);
+  padding: 2rem 2rem 2rem 2rem;
+  position: relative;
+}
+.explore-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.5rem; font-weight: 300; color: var(--sage-mid);
+  line-height: 1; margin-bottom: 0.75rem; display: block;
+}
+.explore-text {
+  font-size: 0.9rem; color: var(--earth-mid); line-height: 1.75;
+}
+.explore-text strong { color: var(--earth); font-weight: 500; }
+
+/* ABOUT */
+.about { background: var(--linen); }
+.about-inner {
+  display: grid; grid-template-columns: 45% 55%; min-height: 700px;
+}
+.about-photo-col {
+  position: relative; overflow: hidden;
+}
+.about-photo-main {
+  height: 65%;
+  background: var(--sage);
+  display: flex; align-items: center; justify-content: center;
+}
+.about-photo-secondary {
+  height: 35%;
+  background: var(--gold-light);
+  border-top: 1px solid var(--sage-mid);
+  display: flex; align-items: center; justify-content: center;
+  padding: 2rem;
+}
+.about-quote-small {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem; font-style: italic; font-weight: 300;
+  color: var(--earth-mid); line-height: 1.6; text-align: center;
+}
+.about-content {
+  padding: 5rem 5rem 5rem 5rem;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.about-content .section-label { color: var(--rose); }
+.about-content .section-h2 em { color: var(--rose); }
+.about-body {
+  font-size: 0.97rem; color: var(--earth-mid);
+  line-height: 1.9; margin-bottom: 1.25rem;
+}
+.about-body strong { font-weight: 500; color: var(--earth); }
+.creds {
+  margin-top: 2rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--sage-mid);
+  display: flex; flex-direction: column; gap: 0.6rem;
+}
+.cred {
+  font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--earth-soft); display: flex; align-items: center; gap: 0.75rem;
+}
+.cred::before { content: ''; width: 16px; height: 1px; background: var(--sage); flex-shrink: 0; }
+
+/* PATH */
+.path { background: var(--earth); padding: 6rem 6rem; }
+.path .section-label { color: var(--sage-mid); }
+.path .section-h2 { color: var(--cream); }
+.path .section-h2 em { color: var(--sage-mid); }
+.path .section-intro { color: rgba(250,248,244,0.6); }
+.path-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr;
+  gap: 0; margin-top: 3rem;
+  border: 1px solid rgba(196,206,188,0.2);
+}
+.path-step {
+  padding: 2.5rem;
+  border-right: 1px solid rgba(196,206,188,0.15);
+  position: relative;
+}
+.path-step:last-child { border-right: none; }
+.step-n {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem; font-weight: 300;
+  color: rgba(196,206,188,0.25); line-height: 1; margin-bottom: 1.25rem;
+}
+.step-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem; font-weight: 500; color: var(--cream);
+  margin-bottom: 0.75rem;
+}
+.step-body {
+  font-size: 0.88rem; color: rgba(250,248,244,0.6); line-height: 1.85;
+}
+.step-benefit {
+  margin-top: 1.5rem; padding-top: 1rem;
+  border-top: 1px solid rgba(196,206,188,0.15);
+  font-size: 0.82rem; font-style: italic; color: var(--sage-mid);
+}
+
+/* TESTIMONIAL ROW */
+.testimonials { background: var(--cream); padding: 6rem 6rem; }
+.testi-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2.5rem;
+  margin-top: 3rem;
+}
+.testi-card {
+  padding-top: 1.75rem;
+  border-top: 2px solid var(--sage);
+}
+.testi-q {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem; font-style: italic; font-weight: 300;
+  color: var(--earth); line-height: 1.7; margin-bottom: 1rem;
+}
+.testi-name {
+  font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--sage);
+}
+
+/* EXPECT */
+.expect {
+  background: var(--linen);
+  padding: 6rem 6rem;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+}
+.expect-right .section-h2 em { color: var(--gold); }
+.expect-bring {
+  margin-top: 2rem; display: flex; flex-direction: column; gap: 0.6rem;
+}
+.bring-item {
+  display: flex; align-items: center; gap: 0.75rem;
+  font-size: 0.9rem; color: var(--earth-mid);
+}
+.bring-arrow { color: var(--sage); }
+.expect-left {
+  display: flex; flex-direction: column; gap: 1rem;
+}
+.expect-callout {
+  background: var(--gold-light);
+  border-left: 3px solid var(--gold);
+  padding: 2rem 2rem;
+}
+.expect-callout-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem; font-style: italic; font-weight: 300;
+  color: var(--earth); line-height: 1.6;
+}
+.expect-photo {
+  background: var(--sage-light);
+  min-height: 240px;
+  border: 1px solid var(--sage-mid);
+  display: flex; align-items: center; justify-content: center;
+}
+.expect-body {
+  font-size: 0.95rem; color: var(--earth-mid); line-height: 1.9; margin-bottom: 1rem;
+}
+
+/* URGENCY / COUNTDOWN BAR */
+.urgency {
+  background: var(--sage);
+  padding: 0.85rem 3rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.urgency-text {
+  font-size: 0.78rem; letter-spacing: 0.06em; color: var(--cream);
+}
+.urgency-text strong { font-weight: 500; }
+.countdown {
+  display: flex; gap: 1rem; align-items: center;
+}
+.count-unit { text-align: center; }
+.count-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-weight: 300; color: var(--cream);
+  display: block; line-height: 1;
+}
+.count-label {
+  font-size: 0.55rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: rgba(250,248,244,0.7);
+}
+.count-divider {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; color: rgba(250,248,244,0.4);
+  line-height: 1; margin-bottom: 0.8rem;
+}
+.urgency-cta {
+  display: inline-block;
+  padding: 0.5rem 1.4rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: var(--cream);
+  font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+  text-decoration: none; white-space: nowrap;
+  transition: background 0.2s; flex-shrink: 0;
+}
+.urgency-cta:hover { background: rgba(255,255,255,0.22); }
+
+/* MID-PAGE CTA STRIP */
+.mid-cta {
+  background: var(--linen-deep);
+  padding: 3.5rem 6rem;
+  display: flex; align-items: center; justify-content: space-between; gap: 2rem;
+  flex-wrap: wrap;
+}
+.mid-cta-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-weight: 300; font-style: italic;
+  color: var(--earth); line-height: 1.4; max-width: 500px;
+}
+.mid-cta-text em { color: var(--sage); font-style: normal; font-weight: 400; }
+.mid-cta-right { display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem; }
+.mid-cta-note { font-size: 0.72rem; color: var(--earth-soft); font-style: italic; }
+
+/* FINAL CTA */
+.final-cta {
+  background: var(--linen-deep);
+  padding: 7rem 6rem;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;
+}
+.final-left .section-h2 em { color: var(--sage); }
+.final-closing {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem; font-style: italic; font-weight: 300;
+  color: var(--earth-mid); line-height: 1.7; margin-top: 1.5rem;
+}
+.final-right {
+  background: var(--earth);
+  padding: 3rem;
+}
+.booking-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem; font-weight: 400; color: var(--cream);
+  margin-bottom: 0.5rem;
+}
+.booking-sub {
+  font-size: 0.82rem; color: rgba(250,248,244,0.5); margin-bottom: 2rem;
+  padding-bottom: 1.5rem; border-bottom: 1px solid rgba(196,206,188,0.15);
+}
+.booking-detail {
+  font-size: 0.88rem; color: rgba(250,248,244,0.7);
+  margin-bottom: 0.4rem; display: flex; gap: 0.6rem;
+}
+.booking-detail-icon { color: var(--sage-mid); flex-shrink: 0; }
+.free-tag {
+  display: inline-block; margin: 1.5rem 0;
+  background: rgba(110,128,96,0.2);
+  border: 1px solid rgba(196,206,188,0.3);
+  color: var(--sage-mid);
+  font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
+  padding: 0.4rem 1rem;
+}
+.btn-light {
+  display: block; width: 100%;
+  background: var(--cream); color: var(--earth);
+  font-family: 'Jost', sans-serif;
+  font-size: 0.75rem; letter-spacing: 0.22em; text-transform: uppercase;
+  font-weight: 500; padding: 1.1rem;
+  text-decoration: none; text-align: center;
+  transition: background 0.2s;
+}
+.btn-light:hover { background: var(--sage-light); }
+.btn-note {
+  font-size: 0.72rem; color: rgba(250,248,244,0.35);
+  text-align: center; margin-top: 0.75rem; font-style: italic;
+}
+
+/* FOOTER */
+footer {
+  background: var(--earth);
+  border-top: 1px solid rgba(196,206,188,0.12);
+  padding: 2rem 6rem;
+  display: flex; align-items: center; justify-content: space-between;
+}
+footer .nav-logo { color: var(--sage-mid); font-size: 1rem; }
+.footer-copy { font-size: 0.72rem; color: var(--earth-soft); letter-spacing: 0.08em; }
+
+/* RESPONSIVE */
+@media (max-width: 980px) {
+  .hero { grid-template-columns: 1fr; min-height: auto; }
+  .hero-left { padding: 4rem 2rem; }
+  .hero-right { min-height: auto; }
+  .video-panel { padding: 2.5rem 1.5rem; }
+  .video-note { display: none; }
+  .trust-bridge, .explore-intro, .about-inner, .expect,
+  .final-cta, .resonance-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .resonance-item:nth-child(even) { padding-left: 0; border-left: none; }
+  .photo-testimonial { grid-template-columns: 1fr; height: auto; }
+  .pt-photo, .pt-photo-2 { min-height: 280px; }
+  .path-grid, .testi-grid, .explore-list, .testi-before-grid { grid-template-columns: 1fr; }
+  .testi-featured { padding: 2.5rem 1.75rem; }
+  .testi-featured-mark { font-size: 5rem; }
+  .path-step { border-right: none; border-bottom: 1px solid rgba(196,206,188,0.15); }
+  nav { padding-left: 1.5rem; padding-right: 1.5rem; }
+  .band { padding: 2rem 1.5rem; gap: 1rem; }
+  .resonance, .explore, .path, .testimonials { padding: 4rem 1.5rem; }
+  .trust-bridge, .about-content, .final-cta, .expect { padding: 3rem 1.5rem; }
+  .about-inner { grid-template-columns: 1fr; }
+  .about-photo-main { min-height: 280px; }
+  .urgency { flex-direction: column; padding: 1.25rem 1.5rem; text-align: center; }
+  .mid-cta { flex-direction: column; padding: 2.5rem 1.5rem; text-align: center; }
+  .mid-cta-right { align-items: center; }
+  footer { flex-direction: column; gap: 0.75rem; text-align: center; padding: 2rem 1.5rem; }
+}
+
+.testi-tag {
+  font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--sage); margin-bottom: 0.6rem;
+}
+.testi-grid { grid-template-columns: 1fr 1fr 1fr; }
+
+/* FEATURED TESTIMONIAL */
+.testi-featured {
+  background: var(--earth);
+  padding: 3.5rem 4rem;
+  margin: 2.5rem 0 3rem;
+  position: relative;
+}
+.testi-featured-mark {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 7rem; line-height: 0.4;
+  color: rgba(184,144,96,0.25);
+  display: block; margin-bottom: 1.5rem;
+}
+.testi-featured-q {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 300; font-style: italic;
+  color: var(--cream); line-height: 1.4; margin-bottom: 1.5rem;
+}
+.testi-featured-name {
+  font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--sage-mid);
+}
+
+/* BEFORE STRIP */
+.testi-before-label, .testi-after-label {
+  font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--earth-soft); margin-bottom: 1.25rem;
+  display: flex; align-items: center; gap: 1rem;
+}
+.testi-before-label::after, .testi-after-label::after {
+  content: ''; flex: 1; height: 1px; background: var(--sage-mid);
+}
+.testi-before-grid {
+  display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px;
+  background: var(--sage-mid); border: 1px solid var(--sage-mid);
+  margin-bottom: 3rem;
+}
+.testi-before-card {
+  background: var(--linen);
+  padding: 2rem;
+}
+.testi-before-q {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.08rem; font-style: italic; font-weight: 300;
+  color: var(--earth); line-height: 1.7; margin-bottom: 1rem;
+}
+.testi-before-name {
+  font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--earth-soft);
+}
+
+/* PIVOT PULL QUOTE */
+.testi-pivot {
+  text-align: center; padding: 3rem 2rem; margin: 1rem 0 3rem;
+  display: flex; flex-direction: column; align-items: center; gap: 1.25rem;
+}
+.testi-pivot-line {
+  width: 60px; height: 1px; background: var(--sage-mid);
+}
+.testi-pivot-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+  font-weight: 300; font-style: italic; color: var(--earth);
+  line-height: 1.5; max-width: 620px;
+}
+.testi-pivot-text em { color: var(--sage); font-style: normal; }
+.testi-pivot-attr {
+  font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--earth-soft);
+}
+
+/* TESTI CTA */
+.testi-cta {
+  text-align: center; margin-top: 3.5rem; padding-top: 3rem;
+  border-top: 1px solid var(--sage-mid);
+  display: flex; flex-direction: column; align-items: center; gap: 0.75rem;
+}
+.testi-cta-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem; font-style: italic; font-weight: 300; color: var(--earth);
+}
+.testi-cta-sub {
+  font-size: 0.72rem; color: var(--earth-soft); font-style: italic;
+}
+
+.testi-after-label { margin-top: 0; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="https://sattvarising.com" class="nav-logo">Sattva Rising</a>
+  <a href="#reserve" class="nav-cta">Reserve Your Spot →</a>
+</nav>
+
+
+<!-- COUNTDOWN BAR — top of page -->
+<div class="urgency" id="countdown-bar">
+  <span class="urgency-text"><strong>Thursday, May 28 · 6:30 PM ET</strong> &nbsp;·&nbsp; Free virtual gathering &nbsp;·&nbsp; Space is intentionally small</span>
+  <div class="countdown">
+    <div class="count-unit">
+      <span class="count-num" id="cd-days">--</span>
+      <span class="count-label">days</span>
+    </div>
+    <span class="count-divider">:</span>
+    <div class="count-unit">
+      <span class="count-num" id="cd-hours">--</span>
+      <span class="count-label">hours</span>
+    </div>
+    <span class="count-divider">:</span>
+    <div class="count-unit">
+      <span class="count-num" id="cd-mins">--</span>
+      <span class="count-label">minutes</span>
+    </div>
+  </div>
+  <a href="#reserve" class="urgency-cta">Save My Seat →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" style="padding:0;">
+  <div class="hero-left">
+    <span class="eyebrow">A free virtual gathering · Thursday, May 28</span>
+    <h1 class="hero-h1">The 2026 Method<br>to <em>Overcome</em><br>Stress & Anxiety</h1>
+    <p class="hero-tagline">Steadying in an Unsteady World</p>
+    <p class="hero-lead">
+      You've tried a lot. Some things helped… for a while. Some didn't.<br><br>
+      This isn't another workshop of tips and tools. It's a reflective, restorative experience that helps you finally understand <strong>what your body has been carrying</strong> — and what it actually needs now to begin feeling steadier.
+    </p>
+
+    <div class="event-details-inline">
+      <div class="detail-row">
+        <span class="detail-icon">📅</span>
+        <span><strong>Thursday, May 28, 2026</strong></span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-icon">🕕</span>
+        <span>6:30 – 8:00 PM ET &nbsp;·&nbsp; Live on Zoom</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-icon">✨</span>
+        <span><strong>Free to attend</strong> &nbsp;·&nbsp; Space is limited</span>
+      </div>
+    </div>
+
+    <a href="#reserve" class="btn-primary">Save My Seat — It's Free</a>
+    <span class="btn-sub">No pitch. No pressure. Just clarity and a little relief.</span>
+  </div>
+
+  <div class="hero-right">
+    <div class="video-panel">
+      <div class="video-wrapper">
+        <video
+          id="sarah-video"
+          controls
+          playsinline
+          poster="IMG_2556_2.jpg"
+          style="width:100%; display:block; background:#000;"
+        >
+          <source src="sarah-video.mov" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+      </div>
+      <div class="video-caption">
+        <p class="video-caption-name">Sarah Day-Boodhoo</p>
+        <p class="video-caption-title">Founder · Sattva Rising</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="band">
+  <div class="band-item">
+    <span class="band-num">20+</span>
+    <span class="band-text">Years in<br>holistic wellness</span>
+  </div>
+  <div class="band-divider"></div>
+  <div class="band-item">
+    <span class="band-num">RYT 500</span>
+    <span class="band-text">Registered<br>yoga teacher</span>
+  </div>
+  <div class="band-divider"></div>
+  <div class="band-item">
+    <span class="band-num">ICF</span>
+    <span class="band-text">Certified health<br>& life coach</span>
+  </div>
+  <div class="band-divider"></div>
+  <div class="band-item">
+    <span class="band-num">Reiki</span>
+    <span class="band-text">Master<br>practitioner</span>
+  </div>
+</div>
+
+<div class="trust-bridge" style="grid-template-columns: 1fr 1fr 1fr;">
+  <div style="overflow:hidden; min-height:320px; background:#1a1a18;">
+    <img src="IMG_2556_2.jpg" alt="Sarah Day-Boodhoo" style="width:100%; height:100%; object-fit:cover; object-position: center 15%; display:block;">
+  </div>
+  <div>
+    <p class="trust-quote-large">"Working with Sarah helped me come back to myself — and back to my <em>joy</em>. I feel more open, more like me again."</p>
+    <p class="trust-quote-attr">— Laurel, after working with Sarah</p>
+  </div>
+  <div class="trust-copy">
+    <div class="section-label">Why this is different</div>
+    <p>Most women Sarah works with have already tried things. Maybe therapy. Maybe medication. Maybe a class or two. Hoping something would shift.</p>
+    <p>But it either didn't last… didn't feel right… or left them more confused about what to do next. <strong>So they're left wondering if there's something they're missing.</strong></p>
+    <p>There usually is. And this gathering helps you find it.</p>
+  </div>
+</div>
+
+<!-- DOES THIS SOUND FAMILIAR -->
+<section class="resonance">
+  <div class="section-label">You are not alone in this</div>
+  <h2 class="section-h2">If any of this lands,<br>this gathering is <em>for you</em></h2>
+  <p class="section-intro">You're not making it up. You're not weak. And you're not failing. Your body has been carrying something — and it's been doing it quietly, for a long time.</p>
+
+  <div class="resonance-grid">
+    <div class="resonance-item">
+      <span class="r-arrow">⟶</span>
+      <p class="r-text">You wake up already anxious — <strong>before the day has even started</strong></p>
+    </div>
+    <div class="resonance-item">
+      <span class="r-arrow">⟶</span>
+      <p class="r-text">Life looks "fine" on the outside, but <strong>inside you feel worn down and on edge</strong></p>
+    </div>
+    <div class="resonance-item">
+      <span class="r-arrow">⟶</span>
+      <p class="r-text">You've tried therapy, meditation, breathwork — and <strong>still feel stuck</strong></p>
+    </div>
+    <div class="resonance-item">
+      <span class="r-arrow">⟶</span>
+      <p class="r-text">Your mind won't quiet at night, <strong>even when your body is completely exhausted</strong></p>
+    </div>
+    <div class="resonance-item">
+      <span class="r-arrow">⟶</span>
+      <p class="r-text">Everything feels like <strong>too much</strong>, and nothing seems to actually help</p>
+    </div>
+    <div class="resonance-item">
+      <span class="r-arrow">⟶</span>
+      <p class="r-text">You feel like you're <strong>managing it</strong> — but not actually changing it</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- WHAT YOU'LL EXPLORE -->
+<section class="explore">
+  <div class="explore-intro">
+    <div>
+      <div class="section-label">What you'll explore</div>
+      <h2 class="section-h2">Clarity on what's<br>actually <em>happening</em></h2>
+    </div>
+    <p class="section-intro" style="margin-bottom:0;">This isn't about finding another fix or pushing yourself to try harder. It's about understanding — for the first time — why it keeps happening, and what your system actually needs.</p>
+  </div>
+
+  <div class="explore-list">
+    <div class="explore-item">
+      <span class="explore-num">01</span>
+      <p class="explore-text">Why anxiety hits first thing in the morning — <strong>before your day even begins</strong> — and what you can actually do about it</p>
+    </div>
+    <div class="explore-item">
+      <span class="explore-num">02</span>
+      <p class="explore-text">Why the things you reach for help <strong>temporarily</strong> — but the stress and anxiety keep coming back</p>
+    </div>
+    <div class="explore-item">
+      <span class="explore-num">03</span>
+      <p class="explore-text">Why your mind <strong>won't slow down at night</strong>, even when your body is completely exhausted</p>
+    </div>
+    <div class="explore-item">
+      <span class="explore-num">04</span>
+      <p class="explore-text">A simple guided <strong>breathwork practice</strong> to settle the nervous system and create more steadiness</p>
+    </div>
+    <div class="explore-item">
+      <span class="explore-num">05</span>
+      <p class="explore-text">Why life starts feeling <strong>heavy, frustrating, or "too much"</strong> — even when you're trying so hard</p>
+    </div>
+    <div class="explore-item">
+      <span class="explore-num">06</span>
+      <p class="explore-text">What actually helps you feel <strong>calm, clear, steady, and present</strong> — not just temporarily, but as a foundation</p>
+    </div>
+    <div class="explore-item">
+      <span class="explore-num">07</span>
+      <p class="explore-text">How to begin helping your <strong>children regulate their nervous systems</strong> too — so they grow up more grounded and resilient</p>
+    </div>
+    <div class="explore-item">
+      <span class="explore-num">08</span>
+      <p class="explore-text">A <strong>heartfelt invitation</strong> to continue deeper work, if that feels aligned — no pressure, ever</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- MID-PAGE BOOKING CTA -->
+<div class="mid-cta">
+  <p class="mid-cta-text">Ready to understand what your body has been carrying — and what it <em>actually</em> needs?</p>
+  <div class="mid-cta-right">
+    <a href="https://calendly.com/sattvarising/2026-method-to-overcome-stress-and-anxiety/2026-05-28T18:30:00-04:00" target="_blank" class="btn-primary">Save My Seat — It's Free</a>
+    <span class="mid-cta-note">Thursday, May 28 · 6:30 PM ET · Live on Zoom</span>
+  </div>
+</div>
+
+<!-- ABOUT SARAH -->
+<div class="about">
+  <div class="about-inner">
+    <div class="about-photo-col">
+      <div class="about-photo-main" style="background:#1a1a18;">
+        <img src="sarah-creek.jpg" alt="Sarah by the creek" class="real-photo" style="object-position: center 25%;">
+      </div>
+      <div class="about-photo-secondary" style="padding:0; background:#1a1a18;">
+        <img src="IMG_1337.jpg" alt="Sarah hands open at creek" class="real-photo" style="object-position: center 35%;">
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="section-label">Your host</div>
+      <h2 class="section-h2">Sarah<br><em>Day-Boodhoo</em></h2>
+      <p class="about-body">
+        Looking back, anxiety had been my baseline for most of my life. I didn't realize anything was "wrong" — I thought this was simply how everyone experienced the world. Always bracing. Always thinking. Always carrying tension underneath.
+      </p>
+      <p class="about-body">
+        It wasn't until I started trying to heal a difficult relationship that something unexpected happened: <strong>my anxiety started lowering as a byproduct</strong>. And that's when I realized — life did not have to feel this hard.
+      </p>
+      <p class="about-body">
+        What changed everything wasn't more tools. It was understanding what was actually happening behind the scenes — physiologically, not just mentally. I founded Sattva Rising to help women find that same steadiness.
+      </p>
+      <p class="about-body">
+        Because it's usually not about trying more things. <strong>It's about understanding what actually helps — and why.</strong>
+      </p>
+      <div class="creds">
+        <span class="cred">ICF Certified Health & Life Coach</span>
+        <span class="cred">ERYT 200 · RYT 500 Registered Yoga Teacher</span>
+        <span class="cred">Reiki Master Practitioner</span>
+        <span class="cred">Student of The Yoga Sutras & Nervous System Work</span>
+        <span class="cred">Founder, Sattva Rising</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PATH -->
+<section class="path">
+  <div class="section-label">The approach</div>
+  <h2 class="section-h2">What actually creates<br><em>lasting</em> change</h2>
+  <p class="section-intro">Most people try to manage anxiety from the outside in. This work goes the other direction — helping the body learn that it's safe, and updating the patterns underneath.</p>
+
+  <div class="path-grid">
+    <div class="path-step">
+      <div class="step-n">I</div>
+      <div class="step-title">Settle the Body</div>
+      <p class="step-body">Your system is on high alert — even when nothing is wrong. This step is about helping your body feel safe again, so it can stop overreacting to everyday life. We cannot rewire while the body feels under attack.</p>
+      <p class="step-benefit">You begin to feel calmer without having to fight for it.</p>
+    </div>
+    <div class="path-step">
+      <div class="step-n">II</div>
+      <div class="step-title">Understand the Pattern</div>
+      <p class="step-body">There are patterns underneath your anxiety — experiences the body stored, meanings it attached, protective reactions it learned. Until those patterns shift in the body, the system keeps reacting the same way.</p>
+      <p class="step-benefit">Things that once triggered you start to lose their grip.</p>
+    </div>
+    <div class="path-step">
+      <div class="step-n">III</div>
+      <div class="step-title">Stay the Course</div>
+      <p class="step-body">This isn't about doing it perfectly. It's about having a simple, supported way to stay on track — especially when old patterns return. With support, setbacks become part of the rewiring. Without it, they become proof you "can't change."</p>
+      <p class="step-benefit">You stop starting over and actually move forward.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- PHOTO + TESTIMONIAL STRIP (moved here — after path section) -->
+<div class="photo-testimonial">
+  <div class="pt-photo" style="background:#1a1a18;">
+    <img src="IMG_0143.jpg" alt="Sarah in yoga practice" class="real-photo" style="object-position: center 20%;">
+  </div>
+  <div class="pt-quote">
+    <p class="pt-quote-text">"I felt lost, disconnected, and stuck in patterns I couldn't seem to change. I now move through life with clarity, intention, and a deep sense of purpose. I've found peace where there used to be anxiety."</p>
+    <span class="pt-quote-name">— Amanda</span>
+  </div>
+  <div class="pt-photo pt-photo-2" style="background:#1a1a18;">
+    <img src="IMG_3864.jpg" alt="Sarah in restorative pose" class="real-photo" style="object-position: center 30%;">
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-label">In their own words</div>
+  <h2 class="section-h2">The women who've<br>been exactly <em>where you are</em></h2>
+  <p class="section-intro" style="max-width:580px;">These aren't polished reviews. They're real words, from real conversations, with women who came in feeling exactly what you might be feeling right now.</p>
+
+  <!-- FEATURED QUOTE — full width -->
+  <div class="testi-featured">
+    <span class="testi-featured-mark">"</span>
+    <p class="testi-featured-q">I was a plumb mess at this time last year.<br>I feel like I've completely transformed.</p>
+    <span class="testi-featured-name">— Pamela P.</span>
+  </div>
+
+  <!-- BEFORE STRIP — 3 "before" quotes from consented clients -->
+  <div class="testi-before-label">The before — you may recognize yourself here</div>
+  <div class="testi-before-grid">
+    <div class="testi-before-card">
+      <p class="testi-before-q">"Before working with Sarah, I felt lost — disconnected from who I was, unsure of my purpose, and stuck in patterns that no longer served me."</p>
+      <span class="testi-before-name">— Amanda</span>
+    </div>
+    <div class="testi-before-card">
+      <p class="testi-before-q">"Before coaching with Sarah I felt like I was stuck in a pit — at rock bottom, weighed down by a film of ick that I couldn't shake. I felt gross, stagnant, and disconnected from myself."</p>
+      <span class="testi-before-name">— Raquel</span>
+    </div>
+    <div class="testi-before-card">
+      <p class="testi-before-q">"Before working with Sarah, I felt stuck — like I was spinning my wheels in both my personal and professional life. I was experiencing real burnout."</p>
+      <span class="testi-before-name">— Harper</span>
+    </div>
+  </div>
+
+  <!-- PULL QUOTE — the pivot -->
+  <div class="testi-pivot">
+    <div class="testi-pivot-line"></div>
+    <p class="testi-pivot-text">Stress is inevitable. Those are things we have to deal with.<br>But <em>feeling stressed and feeling angry — that's optional.</em></p>
+    <span class="testi-pivot-attr">— Laurel A., Writing Teacher & CASA Advocate</span>
+    <div class="testi-pivot-line"></div>
+  </div>
+
+  <!-- AFTER CARDS — 4 specific transformation moments -->
+  <div class="testi-after-label">The after — this is what begins to shift</div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <p class="testi-tag">On conflicts that no longer consume her</p>
+      <p class="testi-q">"I've had several conflicts come up that normally would have set me on a few hours of agitated spiraling — and there was no emotional disruption. Nothing that lingered."</p>
+      <span class="testi-name">— Laurel A.</span>
+    </div>
+    <div class="testi-card">
+      <p class="testi-tag">On feeling different in the body</p>
+      <p class="testi-q">"I would have been much more stressed out — a physical stress experience. The amount of stress and anxiety would have been so much greater. Now it's still there, but… it's different. And that feels really good."</p>
+      <span class="testi-name">— Valerie G.</span>
+    </div>
+    <div class="testi-card">
+      <p class="testi-tag">On what actually changes</p>
+      <p class="testi-q">"Working with Sarah, I have created new practices that I am confident will continually support and evolve me. Finally, I am taking the time to take care of me — mind, body, heart, soul, and spirit."</p>
+      <span class="testi-name">— Laurel</span>
+    </div>
+    <div class="testi-card">
+      <p class="testi-tag">On awareness replacing the spiral</p>
+      <p class="testi-q">"I am so aware of my higher self — the observer, the sense of me looking at life — rather than that feeling of being stuck and in the spiral."</p>
+      <span class="testi-name">— Laurel A.</span>
+    </div>
+  </div>
+
+  <!-- CTA AFTER TESTIMONIALS -->
+  <div class="testi-cta">
+    <p class="testi-cta-text">This could be your story too.</p>
+    <a href="https://calendly.com/sattvarising/2026-method-to-overcome-stress-and-anxiety/2026-05-28T18:30:00-04:00" target="_blank" class="btn-primary">Save My Seat — Thursday, May 28</a>
+    <p class="testi-cta-sub">Free · Live on Zoom · No pitch, ever</p>
+  </div>
+</section>
+
+<!-- WHAT TO EXPECT -->
+<div class="expect">
+  <div class="expect-left">
+    <div class="expect-callout">
+      <p class="expect-callout-text">"You don't need fixing. Because you're not broken. Your system may simply need something different — and more supportive — to finally soften."</p>
+    </div>
+    <div class="expect-photo" style="padding:0; background:#1a1a18; min-height:300px;">
+      <img src="IMG_1300.jpg" alt="Sarah on clifftop, face lifted" class="real-photo" style="object-position: center 40%;">
+    </div>
+  </div>
+  <div class="expect-right">
+    <div class="section-label">What to expect</div>
+    <h2 class="section-h2">A space to slow down,<br>feel understood,<br>and <em>soften</em></h2>
+    <p class="expect-body">This gathering includes guided inquiry, mindful awareness, and a breathwork practice designed to settle the nervous system — and help you feel the difference in your body.</p>
+    <p class="expect-body">It's a supportive space to make sense of what you've been living with, without pressure to fix or change yourself. Come as you are.</p>
+    <p class="expect-body">And since we keep the group intentionally small, there's space for real conversation — this won't feel like a webinar.</p>
+    <div class="expect-bring">
+      <div class="bring-item"><span class="bring-arrow">⟶</span> Comfortable, cozy clothing</div>
+      <div class="bring-item"><span class="bring-arrow">⟶</span> Paper and a pencil for reflection</div>
+      <div class="bring-item"><span class="bring-arrow">⟶</span> Anything that supports your comfort</div>
+      <div class="bring-item"><span class="bring-arrow">⟶</span> An open heart — that's all</div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="reserve">
+  <div class="final-left">
+    <div class="section-label">One last thing</div>
+    <h2 class="section-h2">Give yourself permission<br>to stop <em>trying so hard</em></h2>
+    <p class="final-closing">
+      The world may remain unpredictable.<br>
+      But your system doesn't have to stay on edge.<br><br>
+      And learning to steady yourself<br>
+      is how you begin returning to yourself again.
+    </p>
+  </div>
+  <div class="final-right">
+    <h3 class="booking-title">Reserve Your Spot</h3>
+    <p class="booking-sub">Free virtual gathering · Thursday, May 28</p>
+    <div class="booking-detail">
+      <span class="booking-detail-icon">📅</span>
+      <span style="color:rgba(250,248,244,0.7);">Thursday, May 28, 2026</span>
+    </div>
+    <div class="booking-detail">
+      <span class="booking-detail-icon">🕕</span>
+      <span style="color:rgba(250,248,244,0.7);">6:30 – 8:00 PM ET</span>
+    </div>
+    <div class="booking-detail">
+      <span class="booking-detail-icon">💻</span>
+      <span style="color:rgba(250,248,244,0.7);">Live on Zoom — link sent after booking</span>
+    </div>
+    <div class="booking-detail">
+      <span class="booking-detail-icon">👥</span>
+      <span style="color:rgba(250,248,244,0.7);">Small group · Intentionally intimate</span>
+    </div>
+    <div class="free-tag">Free to attend</div>
+    <a href="https://calendly.com/sattvarising/2026-method-to-overcome-stress-and-anxiety/2026-05-28T18:30:00-04:00" target="_blank" class="btn-light">Save My Seat →</a>
+    <p class="btn-note">No pitch. No pressure. A heartfelt invitation only if it feels aligned.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <a href="https://sattvarising.com" class="nav-logo">Sattva Rising</a>
+  <span class="footer-copy">© 2026 Sarah Day-Boodhoo · sattvarising.com</span>
+</footer>
+
+<script>
+  // Countdown to May 28 2026 6:30pm ET (UTC-4)
+  function updateCountdown() {
+    const target = new Date('2026-05-28T22:30:00Z');
+    const now = new Date();
+    const diff = target - now;
+    if (diff <= 0) {
+      document.getElementById('countdown-bar').style.display = 'none';
+      return;
+    }
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins = Math.floor((diff % 3600000) / 60000);
+    document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 30000);
+</script>
+
+</body>
+</html>
